@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #3C4043;
+    font-family : arial;
+    color:white;
+}
+h1{
+    text-align: center;
+    margin: 10px 0px;
+}
+button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.keepNote{
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.keepNote input{
+    width: 92%;
+    padding: 10px 10px;
+    margin-bottom: 13px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    display: none;
+}
+.keepNote textarea{
+    width: 92%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    word-spacing: -3px;
+}
+.keepNote textarea::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    color: #9e9a9a;
+    letter-spacing: -1px;
+}
+#keepArea{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 47px;
+}
+.keepSingle{
+    flex: 0 23.4%;
+    background: #1d1e1f;
+    margin: 9px 9px;
+    border-radius: 5px;
+    padding: 17px;
+    height: 120px;
+    color: white;
+    position: relative;
+}
+.keepNote input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    color: #9e9a9a;
+}
+
+#keepAdd {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+#keepAdd:hover{
+    background:#ddd;
+}
+.keepSingle h4 {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.keepSingle p {
+    font-size: 17px;
+}
+
+.delete {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 17px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color:white;
+    opacity: 0;
+    cursor: pointer;
+}
+.delete:hover{
+    background: red;
+}
+
+.keepSingle:hover .delete{
+    opacity: 1;
+}
+.close {
+    position: absolute;
+    bottom: 19px;
+    right: 4%;
+    font-size: 20px;
+    display: none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="keep.css">
+</head>
+<body>
+    <h1>Google Keep</h1>
+    <div class="keepNote">
+        <input id="keetTitle" class="keepinput" type="text" placeholder="Title"/>
+        <textarea id="keepDes" class="keeptext" placeholder="Take a note..."></textarea>
+        <button id="keepAdd"><i class="fas fa-thumbtack"></i></button>
+        <button class="close"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="keepArea"></div>
+
+    <script src="keep.js"></script>
+</body>
+</html>
